@@ -1,0 +1,78 @@
+$grey: #9a9a9a;
+$green: #7dc28f;
+$red: #a04b53;
+%flex {
+  display: flex;
+}
+%logo {
+  width: 26px;
+  height: 26px;
+  @extend %flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(242.65deg, #545665 6.09%, #2f3648 85.4%) center
+    center fixed no-repeat;
+  background-size: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+span,
+button {
+  margin: 0;
+  color: $grey;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.walletlogo {
+  @extend %logo;
+}
+
+[data-logotype='BTC'],
+.BTC {
+  background: #476481;
+}
+[data-logotype='ETH'],
+.ETH {
+  background: #46456c;
+}
+[data-logotype='XRF'],
+.XRF {
+  background: #5b4b66;
+}
+[data-logotype='MNR'],
+.MNR {
+  background: #4b525f;
+}
+
+.increase {
+  color: $green;
+}
+.decrease {
+  color: $red;
+}

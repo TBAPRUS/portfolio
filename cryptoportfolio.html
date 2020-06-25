@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cryptoportfolio/css/style.css" />
+    <title>Crypto portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="cryptoportfolio/img/logo.png" alt="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Buy / Sell</a></li>
+          <li><a href="#">Trading</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a class="active" href="#">Portfolio</a></li>
+        </ul>
+      </nav>
+      <div id="profile">
+        <img src="cryptoportfolio/img/profile.png" alt="profile" />
+      </div>
+    </header>
+    <main>
+      <section id="leftbar">
+        <h1>Portfolio</h1>
+        <div id="wallets"></div>
+      </section>
+      <section id="rightbar">
+        <div id="graph">
+          <div id="balance"></div>
+          <div id="chart">
+            <div id="blocks"></div>
+            <div id="dates"></div>
+            <div id="lines"></div>
+            <div id="scale"></div>
+          </div>
+        </div>
+        <div id="most">
+          <div id="profitable"></div>
+          <div id="unprofitable"></div>
+        </div>
+        <div id="interest">
+          <h2>What is interesting</h2>
+          <div id="interitems"></div>
+        </div>
+      </section>
+    </main>
+    <script src="http://localhost:9000/bundle.js"></script>
+  </body>
+</html>

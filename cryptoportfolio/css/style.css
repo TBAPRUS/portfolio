@@ -1,0 +1,401 @@
+main section#rightbar #interest #interitems .interitem, main section#rightbar #interest #interitems, main section#rightbar #most > div .down .low, main section#rightbar #most > div .down, main section#rightbar #most > div .headmost, main section#rightbar #most, main section#rightbar #graph, main section#leftbar #wallets .wallet .namecount, main section#leftbar #wallets .wallet, main, header nav > ul, header #logo, header, .walletlogo {
+  display: flex;
+}
+
+.walletlogo {
+  width: 26px;
+  height: 26px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(242.65deg, #545665 6.09%, #2f3648 85.4%) center center fixed no-repeat;
+  background-size: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+span,
+button {
+  margin: 0;
+  color: #9a9a9a;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+[data-logotype=BTC],
+.BTC {
+  background: #476481;
+}
+
+[data-logotype=ETH],
+.ETH {
+  background: #46456c;
+}
+
+[data-logotype=XRF],
+.XRF {
+  background: #5b4b66;
+}
+
+[data-logotype=MNR],
+.MNR {
+  background: #4b525f;
+}
+
+.increase {
+  color: #7dc28f;
+}
+
+.decrease {
+  color: #a04b53;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  height: 86px;
+}
+header #logo {
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 86px;
+  background-color: #4c61ee;
+  box-shadow: 0px 4px 20px rgba(76, 97, 238, 0.4);
+}
+header nav > ul > li > a {
+  color: #9a9a9a;
+  margin-right: 86px;
+}
+header nav > ul > li > a.active {
+  color: white;
+}
+header nav > ul > li > a.active:before {
+  content: "";
+  position: absolute;
+  margin-left: -12px;
+  margin-top: 3px;
+  height: 15px;
+  width: 2px;
+  background: white;
+}
+header nav > ul > li > a:hover {
+  color: white;
+  transition: ease 0.5s;
+}
+header nav > ul > li > a:hover:before {
+  content: "";
+  position: absolute;
+  margin-left: -12px;
+  margin-top: 3px;
+  height: 15px;
+  width: 2px;
+  background: white;
+}
+header #profile {
+  margin-right: 65px;
+}
+
+main section#leftbar {
+  padding-top: 42px;
+  margin-right: 59px;
+  width: 380px;
+}
+main section#leftbar > h1 {
+  margin-left: 61px;
+  margin-bottom: 29px;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+main section#leftbar #wallets {
+  width: 380px;
+  height: 517px;
+}
+main section#leftbar #wallets .wallet {
+  height: 94px;
+  align-items: center;
+}
+main section#leftbar #wallets .wallet:before {
+  content: "";
+  position: absolute;
+  align-self: flex-start;
+  height: 3px;
+  width: 380px;
+  background: linear-gradient(to right, #384256, #3d404f);
+}
+main section#leftbar #wallets .wallet .walletlogo {
+  margin-left: 63px;
+}
+main section#leftbar #wallets .wallet .namecount {
+  margin-left: 19px;
+}
+main section#leftbar #wallets .wallet .namecount h3 {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+}
+main section#leftbar #wallets .wallet .namecount p {
+  color: white;
+}
+main section#leftbar #wallets .wallet .cost {
+  margin-left: 49px;
+  font-size: 12px;
+  line-height: 14px;
+}
+main section#leftbar #wallets .wallet p:last-child {
+  margin-left: 15px;
+}
+main section#leftbar #wallets > .wallet:last-child {
+  cursor: pointer;
+  background: linear-gradient(270deg, #303647 0%, #404657 100%);
+}
+main section#leftbar #wallets > .wallet:last-child .walletlogo {
+  background: #4c61ef;
+}
+main section#leftbar #wallets > .wallet:last-child h3 {
+  margin-left: 19px;
+  color: white;
+}
+main section#leftbar #wallets > .wallet:last-child p {
+  margin-left: 8px;
+  font-size: 12px;
+  line-height: 14px;
+}
+main section#rightbar {
+  width: 100%;
+}
+main section#rightbar #graph {
+  background: linear-gradient(71.26deg, #4b6170 5.65%, #4c4e56 100%);
+  margin-bottom: 27px;
+  padding: 48px 67px 49px 71px;
+}
+main section#rightbar #graph #balance {
+  width: 100%;
+  max-width: 230px;
+  margin-right: 30px;
+}
+main section#rightbar #graph #balance h3 {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 13px;
+}
+main section#rightbar #graph #balance p {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 30px;
+}
+main section#rightbar #graph #balance p:first-of-type {
+  font-size: 38px;
+  line-height: 45px;
+  color: white;
+  margin-bottom: 14px;
+}
+main section#rightbar #graph #balance p:nth-child(3) {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 37px;
+}
+main section#rightbar #graph #balance #interval a {
+  margin-right: 25px;
+}
+main section#rightbar #graph #balance #interval a.active {
+  color: #4d8bc2;
+}
+main section#rightbar #graph #chart {
+  width: 100%;
+  margin: 3% 0;
+}
+main section#rightbar #graph #chart #scale > p {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  transform: rotate(-90deg);
+}
+main section#rightbar #graph #chart #dates > p {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section#rightbar #graph #chart #lines div {
+  position: absolute;
+  height: 1px;
+  border-top: 1px dotted #4d5059;
+}
+main section#rightbar #graph #chart #blocks > div > div {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+main section#rightbar #most {
+  justify-content: space-between;
+}
+main section#rightbar #most > div {
+  padding: 50px 4px 58px 41px;
+  width: 100%;
+}
+main section#rightbar #most > div .headmost {
+  align-items: center;
+  font-size: 13px;
+  line-height: 15px;
+}
+main section#rightbar #most > div .headmost h3 {
+  margin-right: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+main section#rightbar #most > div .headmost > p {
+  font-weight: normal;
+  margin-right: 11px;
+}
+main section#rightbar #most > div .headmost .dropdown .dropdowncontent {
+  display: none;
+  position: absolute;
+  margin-left: -20px;
+  padding: 5px;
+}
+main section#rightbar #most > div .headmost .dropdown:hover .dropdowncontent {
+  display: block;
+  background: #4b5962;
+  min-width: 50px;
+}
+main section#rightbar #most > div .headmost .dropdown:hover .dropdowncontent a {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+main section#rightbar #most > div .headmost .dropdown:hover .dropdowncontent a:hover {
+  background: white;
+}
+main section#rightbar #most > div .headmost .dropdown:hover .dropdowncontent a:last-child {
+  margin-bottom: 0;
+}
+main section#rightbar #most > div .down {
+  align-items: center;
+}
+main section#rightbar #most > div .down h3 {
+  margin-left: 19px;
+  margin-right: 26px;
+}
+main section#rightbar #most > div .down .low {
+  align-items: center;
+}
+main section#rightbar #most > div .down .low p {
+  font-weight: 300;
+}
+main section#rightbar #most > div .down .low p:first-child {
+  margin-right: 22px;
+}
+main section#rightbar #most > div hr {
+  border: none;
+  height: 3px;
+  margin-top: 22px;
+  margin-bottom: 28px;
+}
+main section#rightbar #most > div#profitable {
+  background: #73cbff;
+  box-shadow: 0px 0px 25px rgba(115, 203, 255, 0.35);
+  margin-right: 27px;
+}
+main section#rightbar #most > div#profitable h3 {
+  color: #4b5962;
+}
+main section#rightbar #most > div#profitable p:not(:last-child) {
+  color: #4b5962;
+}
+main section#rightbar #most > div#profitable hr {
+  background: #70c4f5;
+}
+main section#rightbar #most > div#unprofitable {
+  background: linear-gradient(70.31deg, #353943 0.6%, #3c3c46 90.05%);
+}
+main section#rightbar #most > div#unprofitable h3 {
+  color: white;
+}
+main section#rightbar #most > div#unprofitable p:not(:last-child) {
+  color: white;
+}
+main section#rightbar #most > div#unprofitable hr {
+  background: #3d3f48;
+}
+main section#rightbar #most > div#unprofitable .low p:not(:last-child) {
+  color: #848695;
+}
+main section#rightbar #interest {
+  margin-top: 44px;
+}
+main section#rightbar #interest > h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  margin-bottom: 19px;
+}
+main section#rightbar #interest #interitems {
+  justify-content: space-between;
+}
+main section#rightbar #interest #interitems .interitem {
+  width: 100%;
+  margin-right: 19px;
+  padding: 19px 30px 19px 41px;
+  background: linear-gradient(77.39deg, #2d3442 2.27%, #313340 99.7%);
+}
+main section#rightbar #interest #interitems .interitem .walletlogo {
+  margin-right: 12px;
+}
+main section#rightbar #interest #interitems .interitem .group1 p:first-child {
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+main section#rightbar #interest #interitems .interitem .group1 p:last-child {
+  color: #c4c5c7;
+}
+main section#rightbar #interest #interitems .interitem .group2 {
+  margin-left: auto;
+  margin-right: 0px;
+  text-align: right;
+}
+main section#rightbar #interest #interitems .interitem .group2 p:first-child {
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+main section#rightbar #interest #interitems .interitem .group2 p:last-child {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+main section#rightbar #interest #interitems .interitem:last-child {
+  margin-right: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

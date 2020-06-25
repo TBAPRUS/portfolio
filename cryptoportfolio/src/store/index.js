@@ -8,10 +8,10 @@ export class Store {
 
     this.setLocalStorage = (item) =>
       localStorage.setItem(name, JSON.stringify(item));
-    /*
+
     const data = genData('2015-00-01', 366 * 5);
     this.setLocalStorage(data);
-*/
+
     this.wallet;
     this.rate;
     this.interval;

@@ -12,12 +12,4 @@ const view = new View();
 
 const controller = new Controller(store, view);
 
-$on(window, 'load', () => {
-  const store = new Store('cryptoportfolio');
-
-  const view = new View();
-
-  const controller = new Controller(store, view);
-
-  controller.init();
-});
+$on(window, 'load', () => controller.init());

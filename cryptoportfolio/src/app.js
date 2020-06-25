@@ -6,10 +6,12 @@ import { View } from './view';
 
 import { Controller } from './controller';
 
-const store = new Store('cryptoportfolio');
+$on(window, 'load', () => {
+  const store = new Store('cryptoportfolio');
 
-const view = new View();
+  const view = new View();
 
-const controller = new Controller(store, view);
+  const controller = new Controller(store, view);
 
-$on(window, 'load', () => controller.init());
+  controller.init();
+});

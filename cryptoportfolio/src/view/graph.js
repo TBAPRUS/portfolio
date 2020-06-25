@@ -56,7 +56,6 @@ export class GraphView {
     }
 
     sortproc.sort((a, b) => b - a);
-    console.log(sortproc);
 
     const procents = [
       $round(sortproc[0], 0),

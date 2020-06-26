@@ -5,6 +5,8 @@ import { GraphController } from './graph';
 
 export class Controller {
   constructor(store, view) {
+    store.init();
+
     this.wallet = new WalletController(store, view.wallet);
     this.interest = new InterestController(store, view.interest);
     this.most = new MostController(store, view.most);
@@ -18,8 +20,6 @@ export class Controller {
   }
 
   init() {
-    this.store.init();
-
     this.wallet.render();
     this.interest.render();
     this.most.render();

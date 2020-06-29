@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", cursive;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+p {
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrap {
+  max-width: 940px;
+  margin: auto;
+}
+
+header {
+  font-family: "Bebas Neue", cursive;
+  padding: 130px 0;
+  background: url("../../folioonepage/img/header.png") no-repeat center center;
+  background-size: 100%;
+  background-size: cover;
+}
+header > .wrap > #header {
+  margin-left: 60px;
+}
+header > .wrap > #header h1 {
+  line-height: 0.78;
+}
+header > .wrap > #header p {
+  line-height: 0.73;
+  font-size: 36px;
+  font-family: "Bebas Neue", cursive;
+}
+
+#navigation {
+  font-family: "Bebas Neue", cursive;
+  background-color: #252222;
+  height: 100px;
+}
+#navigation > .wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 25px;
+}
+#navigation > .wrap h2 {
+  margin-left: 60px;
+}
+#navigation > .wrap #rightnav {
+  display: flex;
+  padding-top: 10px;
+}
+#navigation > .wrap #rightnav #social {
+  margin-left: 50px;
+}
+#navigation > .wrap #rightnav #social > a {
+  margin-right: 5px;
+}
+#navigation > .wrap #rightnav nav {
+  margin-right: 20px;
+}
+#navigation > .wrap #rightnav nav ul {
+  display: flex;
+}
+#navigation > .wrap #rightnav nav ul li a {
+  position: relative;
+  padding: 0 14px;
+}
+#navigation > .wrap #rightnav nav ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 30px;
+  background-color: #65ba99;
+  height: 1px;
+  width: 0%;
+  transition: linear 0.5s;
+}
+#navigation > .wrap #rightnav nav ul li a:hover {
+  color: #65ba99;
+  transition: linear 0.5s;
+}
+#navigation > .wrap #rightnav nav ul li a:hover::before {
+  width: 100%;
+}
+
+section#portfolio {
+  font-family: "Bebas Neue", cursive;
+  padding: 60px 0 100px 0;
+  background-color: #65ba99;
+  text-align: center;
+}
+section#portfolio h2 {
+  margin-bottom: 5px;
+}
+section#portfolio h3 {
+  margin-bottom: 45px;
+}
+section#portfolio #imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+section#portfolio #imgs > img {
+  background-color: #65ba99;
+}
+section#portfolio #imgs .hoverbox {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(101, 186, 153, 0.75);
+}
+section#portfolio #imgs .hoverbox > a {
+  margin-top: 25px;
+}
+section#portfolio #imgs .hoverbox .downicon a {
+  margin-right: 30px;
+}
+section#portfolio #imgs .hoverbox .downicon a:last-child {
+  margin-right: 0;
+}
+
+section#quote {
+  font-family: "Bebas Neue", cursive;
+  background: url("../../folioonepage/img/quote.png") no-repeat center center;
+  padding-top: 95px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+section#quote .wrap p:first-child {
+  display: inline-block;
+  position: relative;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+section#quote .wrap p:first-child::before {
+  display: inline-block;
+  font-size: 100px;
+  content: ",,";
+  position: absolute;
+  transform: rotate(180deg);
+  left: -60px;
+  top: -30px;
+}
+section#quote .wrap p:first-child::after {
+  display: inline-block;
+  font-size: 100px;
+  content: ",,";
+  position: absolute;
+  transform: scale(1, -1);
+  right: -5px;
+}
+section#quote .wrap p:last-child {
+  text-align: right;
+  margin-right: 100px;
+  font-size: 24px;
+}
+
+section#news {
+  background-color: #cdcdcd;
+  font-family: "Open Sans", sans-serif;
+  padding: 80px 0;
+}
+section#news h2 {
+  color: #252222;
+  text-align: center;
+  margin-bottom: 80px;
+}
+section#news #newscontent {
+  display: flex;
+}
+section#news #newscontent #leftbar {
+  margin-right: 80px;
+  max-width: 460px;
+}
+section#news #newscontent #leftbar .new .date {
+  display: inline-block;
+  padding: 3px 15px;
+  background-color: #59a386;
+  margin-bottom: 20px;
+}
+section#news #newscontent #leftbar .new .date p {
+  font-size: 11px;
+}
+section#news #newscontent #leftbar .new .newtags {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+section#news #newscontent #leftbar .new .newtags p {
+  margin-left: 8px;
+  font-size: 12px;
+  font-style: italic;
+  color: #e74c3c;
+}
+section#news #newscontent #leftbar h3 {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #59a386;
+  margin-bottom: 15px;
+}
+section#news #newscontent #leftbar > img {
+  max-width: 460px;
+  max-height: 200px;
+  margin-bottom: 20px;
+}
+section#news #newscontent #leftbar .newtext p {
+  font-size: 14px;
+  color: #666767;
+}
+section#news #newscontent #leftbar .readmore a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 14px;
+  color: #e2534b;
+}
+section#news #newscontent #leftbar .readmore a img {
+  margin-left: 15px;
+  border-radius: 3px;
+}
+section#news #newscontent #rightbar h3 {
+  width: 100%;
+  font-size: 18px;
+  font-family: "Bebas Neue", cursive;
+  color: #59a386;
+  margin-bottom: 25px;
+}
+section#news #newscontent #rightbar #tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+section#news #newscontent #rightbar #tags .tag {
+  margin-bottom: 10px;
+  margin-right: 8px;
+}
+section#news #newscontent #rightbar #tags .tag a {
+  padding: 2px 11px;
+  background-color: #59a386;
+  font-size: 14px;
+}
+section#news #newscontent #rightbar #fromblog {
+  margin-top: 60px;
+}
+section#news #newscontent #rightbar #fromblog h3 {
+  font-size: 20px;
+  font-style: italic;
+  color: #9b9b9b;
+  font-weight: light;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+section#news #newscontent #rightbar #fromblog h3 span {
+  color: #232323;
+  font-style: normal;
+}
+section#news #newscontent #rightbar #fromblog .article {
+  display: flex;
+  margin-bottom: 20px;
+}
+section#news #newscontent #rightbar #fromblog .article .articleimg {
+  min-width: 70px;
+  height: 70px;
+  background-color: #676767;
+  border-radius: 3px;
+  margin-right: 18px;
+}
+section#news #newscontent #rightbar #fromblog .article .articleinfo p:first-child {
+  font-size: 13px;
+  color: #252222;
+}
+section#news #newscontent #rightbar #fromblog .article .articleinfo p:last-child {
+  color: rgba(226, 83, 75, 0.502);
+  font-size: 13px;
+}
+
+section#company {
+  background-color: #bebebe;
+}
+section#company .wrap {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section#bio {
+  background-color: #e2534b;
+}
+section#bio .wrap {
+  padding: 50px 0 80px 0;
+}
+section#bio .wrap h2 {
+  color: #252222;
+  text-align: center;
+  margin-bottom: 60px;
+}
+section#bio .wrap #biocontent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+section#bio .wrap #biocontent #left {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+section#bio .wrap #biocontent #left h3 {
+  font-size: 36px;
+  margin-bottom: 36px;
+}
+section#bio .wrap #biocontent #left .social {
+  margin-top: 48px;
+}
+section#bio .wrap #biocontent #left .social a {
+  margin-right: 10px;
+}
+section#bio .wrap #biocontent #left .social a:last-child {
+  margin-right: 0;
+}
+section#bio .wrap #biocontent #right {
+  max-width: 450px;
+}
+section#bio .wrap #biocontent #right h4 {
+  font-size: 18px;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 25px;
+}
+section#bio .wrap #biocontent #right p {
+  font-size: 14px;
+  line-height: 1.286;
+  font-family: "Open Sans", sans-serif;
+}
+section#bio .wrap #biocontent #right p:last-child {
+  margin-top: 23px;
+}
+
+section#contact {
+  padding: 50px 0 36px 0;
+  background: url("../../folioonepage/img/contact.png") no-repeat center center;
+}
+section#contact .wrap {
+  text-align: center;
+}
+section#contact .wrap h2 {
+  color: #252222;
+  margin-bottom: 50px;
+}
+section#contact .wrap p {
+  font-family: "Bebas Neue", cursive;
+}
+section#contact .wrap p:nth-of-type(1) {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+section#contact .wrap p:nth-of-type(2) {
+  padding: 9px 145px;
+  border: 5px solid white;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+section#contact .wrap p:nth-of-type(3) {
+  font-size: 30px;
+  margin-bottom: 85px;
+}
+section#contact .wrap p:nth-of-type(4) {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,375 @@
+@import '_options';
+
+header {
+  font-family: $BebasNeue;
+  padding: 130px 0;
+  background: url('../../folioonepage/img/header.png') no-repeat center center;
+  background-size: 100%;
+  background-size: cover;
+  & > .wrap > #header {
+    margin-left: 60px;
+    h1 {
+      line-height: 0.78;
+    }
+    p {
+      line-height: 0.73;
+      font-size: 36px;
+      font-family: $BebasNeue;
+    }
+  }
+}
+#navigation {
+  font-family: $BebasNeue;
+  background-color: #252222;
+  height: 100px;
+  & > .wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    h2 {
+      margin-left: 60px;
+    }
+    #rightnav {
+      display: flex;
+      padding-top: 10px;
+      #social {
+        margin-left: 50px;
+        & > a {
+          margin-right: 5px;
+        }
+      }
+      nav {
+        margin-right: 20px;
+        ul {
+          display: flex;
+          li {
+            a {
+              position: relative;
+              padding: 0 14px;
+              &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 30px;
+                background-color: $green;
+                height: 1px;
+                width: 0%;
+                transition: linear 0.5s;
+              }
+            }
+            a:hover {
+              color: $green;
+              transition: linear 0.5s;
+              &::before {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+section#portfolio {
+  font-family: $BebasNeue;
+  padding: 60px 0 100px 0;
+  background-color: $green;
+  text-align: center;
+  h2 {
+    margin-bottom: 5px;
+  }
+  h3 {
+    margin-bottom: 45px;
+  }
+  #imgs {
+    display: flex;
+    flex-wrap: wrap;
+    & > img {
+      background-color: $green;
+    }
+    .hoverbox {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      background-color: rgb(101, 186, 153, 0.75);
+      & > a {
+        margin-top: 25px;
+      }
+      .downicon {
+        a {
+          margin-right: 30px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+section#quote {
+  font-family: $BebasNeue;
+  background: url('../../folioonepage/img/quote.png') no-repeat center center;
+  padding-top: 95px;
+  padding-bottom: 40px;
+  text-align: center;
+  .wrap {
+    p {
+      &:first-child {
+        display: inline-block;
+        position: relative;
+        &::before {
+          display: inline-block;
+          font-size: 100px;
+          content: ',,';
+          position: absolute;
+          transform: rotate(180deg);
+          left: -60px;
+          top: -30px;
+        }
+        &::after {
+          display: inline-block;
+          font-size: 100px;
+          content: ',,';
+          position: absolute;
+          transform: scale(1, -1);
+          right: -5px;
+        }
+        font-size: 36px;
+        margin-bottom: 35px;
+      }
+      &:last-child {
+        text-align: right;
+        margin-right: 100px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+section#news {
+  background-color: #cdcdcd;
+  font-family: $Opensans;
+  padding: 80px 0;
+  h2 {
+    color: rgb(37, 34, 34);
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  #newscontent {
+    display: flex;
+    #leftbar {
+      margin-right: 80px;
+      max-width: 460px;
+      .new {
+        .date {
+          display: inline-block;
+          padding: 3px 15px;
+          background-color: $lightgreen;
+          margin-bottom: 20px;
+          p {
+            font-size: 11px;
+          }
+        }
+        .newtags {
+          float: right;
+          display: flex;
+          align-items: center;
+          p {
+            margin-left: 8px;
+            font-size: 12px;
+            font-style: italic;
+            color: rgb(231, 76, 60);
+          }
+        }
+      }
+      h3 {
+        font-size: 16px;
+        font-family: $Opensans;
+        color: $lightgreen;
+        margin-bottom: 15px;
+      }
+      & > img {
+        max-width: 460px;
+        max-height: 200px;
+        margin-bottom: 20px;
+      }
+      .newtext {
+        p {
+          font-size: 14px;
+          color: rgb(102, 103, 103);
+        }
+      }
+      .readmore {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          font-size: 14px;
+          color: rgb(226, 83, 75);
+          img {
+            margin-left: 15px;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+    #rightbar {
+      h3 {
+        width: 100%;
+        font-size: 18px;
+        font-family: $BebasNeue;
+        color: rgb(89, 163, 134);
+        margin-bottom: 25px;
+      }
+      #tags {
+        display: flex;
+        flex-wrap: wrap;
+        .tag {
+          margin-bottom: 10px;
+          margin-right: 8px;
+          a {
+            padding: 2px 11px;
+
+            background-color: $lightgreen;
+            font-size: 14px;
+          }
+        }
+      }
+      #fromblog {
+        margin-top: 60px;
+        h3 {
+          font-size: 20px;
+          font-style: italic;
+          color: rgb(155, 155, 155);
+          font-weight: light;
+          font-weight: 400;
+          font-family: $Opensans;
+          span {
+            color: rgb(35, 35, 35);
+            font-style: normal;
+          }
+        }
+        .article {
+          display: flex;
+          margin-bottom: 20px;
+          .articleimg {
+            min-width: 70px;
+            height: 70px;
+            background-color: #676767;
+            border-radius: 3px;
+            margin-right: 18px;
+          }
+          .articleinfo {
+            p:first-child {
+              font-size: 13px;
+              color: rgb(37, 34, 34);
+            }
+            p:last-child {
+              color: rgba(226, 83, 75, 0.502);
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+section#company {
+  background-color: #bebebe;
+  .wrap {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+section#bio {
+  background-color: #e2534b;
+  .wrap {
+    padding: 50px 0 80px 0;
+    h2 {
+      color: rgb(37, 34, 34);
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    #biocontent {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      #left {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          font-size: 36px;
+          margin-bottom: 36px;
+        }
+        .social {
+          margin-top: 48px;
+          a {
+            margin-right: 10px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      #right {
+        max-width: 450px;
+        h4 {
+          font-size: 18px;
+          color: rgb(255, 255, 255);
+          font-family: $BebasNeue;
+          margin-bottom: 25px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 1.286;
+          font-family: $Opensans;
+          &:last-child {
+            margin-top: 23px;
+          }
+        }
+      }
+    }
+  }
+}
+section#contact {
+  padding: 50px 0 36px 0;
+  background: url('../../folioonepage/img/contact.png') no-repeat center center;
+  .wrap {
+    text-align: center;
+    h2 {
+      color: rgb(37, 34, 34);
+      margin-bottom: 50px;
+    }
+    p {
+      font-family: $BebasNeue;
+      &:nth-of-type(1) {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+      &:nth-of-type(2) {
+        padding: 9px 145px;
+        border: 5px solid white;
+        border-radius: 5px;
+        display: inline-block;
+        font-size: 60px;
+        margin-bottom: 10px;
+      }
+      &:nth-of-type(3) {
+        font-size: 30px;
+        margin-bottom: 85px;
+      }
+      &:nth-of-type(4) {
+        font-size: 14px;
+        font-weight: bold;
+        font-family: $Opensans;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+$Opensans: 'Open Sans', sans-serif;
+$BebasNeue: 'Bebas Neue', cursive;
+
+$green: #65ba99;
+$lightgreen: #59a386;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $BebasNeue;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+p {
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrap {
+  max-width: 940px;
+  margin: auto;
+}
